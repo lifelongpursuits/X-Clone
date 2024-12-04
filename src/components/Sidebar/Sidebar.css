@@ -1,0 +1,57 @@
+.sidebar {
+  width: 245px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: background-color 0.2s;
+  margin-right: 30px;
+}
+
+.nav-item:hover {
+  background-color: #181818;
+}
+
+.nav-item span {
+  margin-left: 15px;
+}
+
+.post-button {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 15px 0;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 30px;
+  transition: background-color 0.2s;
+}
+
+.post-button:hover {
+  background-color: #1a8cd8;
+}

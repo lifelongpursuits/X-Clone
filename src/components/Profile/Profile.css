@@ -1,0 +1,163 @@
+.profile {
+  flex: 0.6;
+  min-width: 600px;
+  max-width: 600px;
+  margin-left: 245px;
+  border-left: 1px solid #2f3336;
+  border-right: 1px solid #2f3336;
+  height: 100vh;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.profile::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.profile-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #2f3336;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.profile-header-content {
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.profile-header-text h2 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.post-count {
+  color: #6e767d;
+  font-size: 13px;
+}
+
+.profile-banner {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.profile-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  padding: 15px;
+  position: relative;
+}
+
+.profile-avatar {
+  position: absolute;
+  top: -70px;
+  left: 15px;
+}
+
+.profile-avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid black;
+  object-fit: cover;
+}
+
+.profile-details {
+  margin-top: 80px;
+}
+
+.profile-details h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.username {
+  color: #6e767d;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bio {
+  color: white;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.profile-metadata {
+  display: flex;
+  gap: 15px;
+  color: #6e767d;
+  margin-bottom: 10px;
+}
+
+.profile-metadata span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-metadata svg {
+  font-size: 16px;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 15px;
+  color: #6e767d;
+}
+
+.profile-stats span {
+  display: flex;
+  gap: 5px;
+}
+
+.profile-stats strong {
+  color: white;
+}
+
+.profile-nav {
+  display: flex;
+  border-bottom: 1px solid #2f3336;
+}
+
+.profile-nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  color: #6e767d;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.profile-nav-item:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.profile-nav-item.active {
+  color: #1d9bf0;
+  border-bottom: 2px solid #1d9bf0;
+}
+
+.profile-posts {
+  background-color: black;
+}

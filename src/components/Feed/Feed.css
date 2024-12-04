@@ -1,0 +1,104 @@
+.feed {
+  flex: 0.6;
+  min-width: 600px;
+  max-width: 600px;
+  margin-left: 245px;
+  border-left: 1px solid #2f3336;
+  border-right: 1px solid #2f3336;
+  height: 100vh;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.feed::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.feed-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px 20px;
+  border-bottom: 1px solid #2f3336;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.feed-header h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  color: white;
+}
+
+.post-input {
+  padding: 10px 15px;
+  border-bottom: 1px solid #2f3336;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.post-input input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.post-input-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-input-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-wrapper {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.icon-wrapper:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.post-icon {
+  color: #1d9bf0;
+  font-size: 20px;
+}
+
+.post-input button {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.post-input button:hover {
+  background-color: #1a8cd8;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}

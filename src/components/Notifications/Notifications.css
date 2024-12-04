@@ -1,0 +1,130 @@
+.notifications {
+  flex: 0.6;
+  min-width: 600px;
+  max-width: 600px;
+  margin-left: 245px;
+  border-left: 1px solid #2f3336;
+  border-right: 1px solid #2f3336;
+  height: 100vh;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+}
+
+.notifications::-webkit-scrollbar {
+  display: none;
+}
+
+.notifications-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px;
+  border-bottom: 1px solid #2f3336;
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+.notifications-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.notifications-tabs {
+  display: flex;
+  border-bottom: 1px solid #2f3336;
+}
+
+.notifications-tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  color: #6e767d;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.notifications-tab:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.notifications-tab.active {
+  color: #1d9bf0;
+  border-bottom: 2px solid #1d9bf0;
+}
+
+.notification-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #2f3336;
+  transition: background-color 0.2s;
+}
+
+.notification-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.notification-icon-container {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  font-size: 20px;
+}
+
+.notification-icon.like {
+  color: #e0245e;
+}
+
+.notification-icon.repost {
+  color: #17bf63;
+}
+
+.notification-icon.follow {
+  color: #1d9bf0;
+}
+
+.notification-icon.comment {
+  color: #1d9bf0;
+}
+
+.notification-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.notification-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.notification-text {
+  flex: 1;
+}
+
+.notification-text p {
+  margin: 0 0 5px 0;
+  line-height: 1.4;
+}
+
+.notification-username {
+  color: #6e767d;
+}
+
+.notification-post-snippet {
+  background-color: rgba(29, 155, 240, 0.1);
+  color: #6e767d;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px 0;
+  font-style: italic;
+}
+
+.notification-timestamp {
+  color: #6e767d;
+  font-size: 13px;
+}
